@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Handy</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block">
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-phone-alt me-2"></small>
+                    <small>Tel : +228 90 73 11 11</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="far fa-envelope-open me-2"></small>
+                    <small>contact@handy.com</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <ol class="breadcrumb justify-content-end mb-0">
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <h1 class="m-0"><img class="img-fluid me-3" src="img/Handy logo.png" alt=""></h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto bg-light pe-4 py-3 py-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Accueil</a>
+                <a href="a-propos.html" class="nav-item nav-link">A Propos</a>
+                <a href="prestations.html" class="nav-item nav-link">Nos prestations</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Informations</a>
+                    <div class="dropdown-menu bg-light border-0 m-0">
+                        <a href="faq.html" class="dropdown-item">FAQ</a>
+                        <a href="moyen-de-paiement.html" class="dropdown-item">Moyens de paiement</a>
+                        <a href="ccm.html" class="dropdown-item">Comment ca marche ?</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <div class="h-100 d-lg-inline-flex align-items-center d-none">
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
+                        class="fab fa-twitter"></i></a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 pt-5">
+                                    <h1 class="display-4 text-white mb-4 animated slideInDown">
+                                        Des pros en un clic pour tous vos travaux
+                                    </h1>
+                                    <p class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown">
+                                        Exigez le meilleur pour vos travaux
+                                    </p>
+                                    <a href="prestations.html" class="btn btn-danger py-3 px-5 animated slideInDown mt-3"> J'ai besoin d'être dépanné</a>
+                                    <a href="" class="btn btn-success py-3 px-5 animated slideInDown mt-3"> Je souhaite faire des travaux</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 pt-5">
+                                    <h1 class="display-4 text-white mb-4 animated slideInDown">
+                                        Des pros en un clic pour tous vos travaux
+                                    </h1>
+                                    <p class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown">
+                                        Exigez le meilleur pour vos travaux
+                                    </p>
+                                    <a href="prestations.html" class="btn btn-danger py-3 px-5 animated slideInDown mt-3"> J'ai besoin d'être dépanné</a>
+                                    <a href="" class="btn btn-success py-3 px-5 animated slideInDown mt-3"> Je souhaite faire des travaux</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Facts Start -->
+    <div class=" py-5 px-5">
+        <div class="">
+            <div class="row g-4">
+                <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="fact-item text-center bg-light h-100 p-2 pt-0">
+                        <div class="fact-icon">
+                            <img src="img/icons/icon-2.png" alt="Icon">
+                        </div>
+                        <h5 class="mb-5">Prix connus à l'avance</h5>
+                        <p class="mb-0"></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="fact-item text-center bg-light h-100 p-2 pt-0">
+                        <div class="fact-icon">
+                            <img src="img/icons/icon-3.png" alt="Icon">
+                        </div>
+                        <h5 class="mb-5">Des artisans expérimentés</h5>
+                        <p class="mb-0"></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="fact-item text-center bg-light h-100 p-2 pt-0">
+                        <div class="fact-icon">
+                            <img src="img/icons/icon-4.png" alt="Icon">
+                        </div>
+                        <h5 class="mb-5">Devis gratuits lors de la 1ère visite</h5>
+                        <p class="mb-0"></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="fact-item text-center bg-light h-100 p-2 pt-0">
+                        <div class="fact-icon">
+                            <img src="img/icons/icon-2.png" alt="Icon">
+                        </div>
+                        <h5 class="mb-5">En urgence ou sur rendez-vous</h5>
+                        <p class="mb-0"></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="fact-item text-center bg-light h-100 p-2 pt-0">
+                        <div class="fact-icon">
+                            <img src="img/icons/icon-3.png" alt="Icon">
+                        </div>
+                        <h5 class="mb-5">Interventions couvertes</h5>
+                        <p class="mb-0"></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="fact-item text-center bg-light h-100 p-2 pt-0">
+                        <div class="fact-icon">
+                            <img src="img/icons/icon-4.png" alt="Icon">
+                        </div>
+                        <h5 class="mb-5">Service et intervention 7J/7</h5>
+                        <p class="mb-0"></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+    <!-- ccm Start -->
+    <div class="container-fluid my-5 p-0">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="display-7 mb-4">Comment ca marche ?</h1>
+            <h6 class="section-title">Décrivez votre problème, obtenez une fourchette de prix, des infos pratiques et
+                l'expertise d'un artisan professionnel.</h6>
+        </div>
+
+        <div class="row g-0">
+            <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="position-relative">
+                    <img class="img-fluid w-100" src="img/fact-1.jpg" alt="">
+                    <div class="ccm-overlay">
+                        <h1 class="display-1">01</h1>
+                        <h4 class="text-white mb-3">Inscrivez-vous</h4>
+                        <p class="text-white">Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit clita duo
+                            justo erat amet</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                <div class="position-relative">
+                    <img class="img-fluid w-100" src="img/fact-2.jpg" alt="">
+                    <div class="ccm-overlay">
+                        <h1 class="display-1">02</h1>
+                        <h4 class="text-white mb-3">Décrivez votre problème
+                        </h4>
+                        <p class="text-white">Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit clita duo
+                            justo erat amet</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="position-relative">
+                    <img class="img-fluid w-100" src="img/fact-3.jpg" alt="">
+                    <div class="ccm-overlay">
+                        <h1 class="display-1">03</h1>
+                        <h4 class="text-white mb-3">Nous sélectionnons l'artisan</h4>
+                        <p class="text-white">Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit clita duo
+                            justo erat amet</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                <div class="position-relative">
+                    <img class="img-fluid w-100" src="img/fact-4.jpg" alt="">
+                    <div class="ccm-overlay">
+                        <h1 class="display-1">04</h1>
+                        <h4 class="text-white mb-3">On s'occupe de tout</h4>
+                        <p class="text-white">Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit clita duo
+                            justo erat amet</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ccm End -->
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="display-7 mb-4">Travaux et Dépannages</h1>
+                <h6 class="section-title">Réservez une prestation et payez en espèce ou par mobile money</h6>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service1-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="img/service-1.jpg" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="img/icons/icon-5.png" alt="Icon">
+                            <h3 class="mb-3">Plomberie & Sanitaire</h3>
+                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
+                                stet
+                                diam sed stet.</p>
+                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Réserver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service1-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="img/service-2.jpg" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="img/icons/icon-6.png" alt="Icon">
+                            <h3 class="mb-3">Electricité & Energie</h3>
+                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
+                                stet
+                                diam sed stet.</p>
+                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Réserver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service1-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="img/service-3.jpg" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="img/icons/icon-7.png" alt="Icon">
+                            <h3 class="mb-3">Froid & Climatisation</h3>
+                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
+                                stet
+                                diam sed stet.</p>
+                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Réserver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service1-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="img/service-4.jpg" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="img/icons/icon-8.png" alt="Icon">
+                            <h3 class="mb-3">Carrelage & Sol</h3>
+                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
+                                stet
+                                diam sed stet.</p>
+                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Réserver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service1-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="img/service-5.jpg" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="img/icons/icon-9.png" alt="Icon">
+                            <h3 class="mb-3">Fixations & Poses</h3>
+                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
+                                stet
+                                diam sed stet.</p>
+                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Réserver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service1-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="img/service-6.jpg" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="img/icons/icon-10.png" alt="Icon">
+                            <h3 class="mb-3">Montage & Démontage</h3>
+                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
+                                stet
+                                diam sed stet.</p>
+                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mt-5">
+                    <a href="prestations.html" class="btn btn-dark col-lg-4 col-md-6 col-8 py-3 px-5 animated slideInDown">Voir toutes nos prestations</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Vendor Start -->
+
+    <!-- Vendor End -->
+
+    <!-- Solutions Entreprises Start -->
+    <div class="container-xxl py-5 bg-light">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="text-center mx-auto mb-0">
+                    <h1 class="display-7 text-center mx-auto mb-2">Solutions Entreprises</h1>
+                    <h6 class="section-title">
+                        Mon Artisan est votre
+                        interlocuteur privilégié pour vos projets de rénovations.
+                    </h6>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 me-3" src="img/icon/icon-07-primary.png" alt="">
+                                    <h5 class="mb-0">Techniciens experts</h5>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 me-3" src="img/icon/icon-09-primary.png" alt="">
+                                    <h5 class="mb-0">Meilleure qualité</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-4">A force de travailler avec des professionnels, nous avons développé une
+                            expertise avérée dans la maintenance pour les entreprises. Mon Artisan est votre
+                            interlocuteur privilégié pour tous vos soucis de maintenance et vos projets de rénovations.
+                        </p>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="btn-lg-square bg-primary rounded-circle me-3">
+                                            <i class="fa fa-phone-alt text-white"></i>
+                                        </div>
+                                        <h5 class="mb-0">Tel : +228 90 73 11 11</h5>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="btn-lg-square bg-primary rounded-circle me-3">
+                                            <i class="fa fa-envelope text-white"></i>
+                                        </div>
+                                        <h5 class="mb-0">contact@handy.com</h5>
+                                    </div>
+                                </div>
+
+                                <a href="contact.html" target="_blank" class="btn btn-primary py-3 px-5 animated slideInDown my-5">En savoir
+                                    plus</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6 text-end">
+                            <img class="img-fluid w-75 wow zoomIn" data-wow-delay="0.1s" src="img/about-1.jpg"
+                                style="margin-top: 25%;">
+                        </div>
+                        <div class="col-6 text-start">
+                            <img class="img-fluid w-100 wow zoomIn" data-wow-delay="0.3s" src="img/about-2.jpg">
+                        </div>
+                        <div class="col-6 text-end">
+                            <img class="img-fluid w-50 wow zoomIn" data-wow-delay="0.5s" src="img/about-3.jpg">
+                        </div>
+                        <div class="col-6 text-start">
+                            <img class="img-fluid w-75 wow zoomIn" data-wow-delay="0.7s" src="img/about-4.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Solutions Entreprises End -->
+
+    <!-- interventions  Start -->
+    <div class="container-xxl py-5 bg-dark">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-7 mb-5" style="color:white;">Les interventions les plus courantes
+                </h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service1-item">
+                        <img class="img-fluid" src="img/service-1.jpg" alt="">
+                        <div class="d-flex align-items-center bg-light">
+                            <div class="service-icon flex-shrink-0 bg-primary">
+                                <img class="img-fluid" src="img/icon/icon-01-light.png" alt="">
+                            </div>
+                            <a class="h4 mx-4 mb-0" href="">Installation Robinet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service1-item">
+                        <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        <div class="d-flex align-items-center bg-light">
+                            <div class="service-icon flex-shrink-0 bg-primary">
+                                <img class="img-fluid" src="img/icon/icon-02-light.png" alt="">
+                            </div>
+                            <a class="h4 mx-4 mb-0" href="">Dépannage Electrique</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service1-item">
+                        <img class="img-fluid" src="img/service-3.jpg" alt="">
+                        <div class="d-flex align-items-center bg-light">
+                            <div class="service-icon flex-shrink-0 bg-primary">
+                                <img class="img-fluid" src="img/icon/icon-03-light.png" alt="">
+                            </div>
+                            <a class="h4 mx-4 mb-0" href="">Installation Prises</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- interventions  End -->
+
+    <!-- Download Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5 px-lg-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <img class="img-fluid wow fadeInUp" data-wow-delay="0.1s" src="img/app.png">
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h5 class="text-primary-gradient fw-medium">Téléchargement</h5>
+                    <h1 class="mb-4">Téléchargez l'application mobile Handy</h1>
+                    <p class="mb-4">Pour une meilleure experience, nous avons pensé à tout.</p>
+                    <div class="row g-4">
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                            <a href="" class="d-flex bg-primary-gradient rounded py-3 px-4">
+                                <i class="fab fa-apple fa-3x text-white flex-shrink-0"></i>
+                                <div class="ms-3">
+                                    <p class="text-white mb-0">Disponible sur</p>
+                                    <h5 class="text-white mb-0">App Store</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                            <a href="" class="d-flex bg-secondary-gradient rounded py-3 px-4">
+                                <i class="fab fa-android fa-3x text-white flex-shrink-0"></i>
+                                <div class="ms-3">
+                                    <p class="text-white mb-0">Disponible sur On</p>
+                                    <h5 class="text-white mb-0">Play Store</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Download End -->
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-5 bg-dark">
+        <div class="container py-5 px-lg-5">
+            <div class="wow fadeInUp mb-5" data-wow-delay="0.1s" style="color:white;">
+                <h1 class="text-center" style="color:white;">Imaginer, rêver....nous réalisons !</h1>
+                <p class="text-center">Projets et Rénovations</p>
+            </div>
+            <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-12 text-center">
+                    <ul class="list-inline mb-5" id="portfolio-flters">
+                        <li class="mx-2 active" data-filter="*">Tous</li>
+                        <li class="mx-2" data-filter=".first" style="color:white;">Ameublement</li>
+                        <li class="mx-2" data-filter=".second" style="color:white;">Décoration</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-4 portfolio-container">
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light p-4">
+                            <p class="text-primary fw-medium mb-2">Projet</p>
+                            <h5 class="lh-base mb-0">Détail du projet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-2.jpg"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light p-4">
+                            <p class="text-primary fw-medium mb-2">Projet</p>
+                            <h5 class="lh-base mb-0">Détail du projet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-3.jpg"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light p-4">
+                            <p class="text-primary fw-medium mb-2">Projet</p>
+                            <h5 class="lh-base mb-0">Détail du projet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-4.jpg"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light p-4">
+                            <p class="text-primary fw-medium mb-2">Projet</p>
+                            <h5 class="lh-base mb-0">Détail du projet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-5.jpg"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light p-4">
+                            <p class="text-primary fw-medium mb-2">Projet</p>
+                            <h5 class="lh-base mb-0">Détail du projet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-6.jpg"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light p-4">
+                            <p class="text-primary fw-medium mb-2">Projet</p>
+                            <h5 class="lh-base mb-0">Détail du projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="border-start border-5 border-primary ps-4 mb-5">
+                        <h6 class="text-body text-uppercase mb-2">Témoignages</h6>
+                        <h1 class="display-6 mb-0">Nos Clients !</h1>
+                    </div>
+                    <p class="mb-4">Ils nous font confiance, pourquoi pas vous ?</p>
+                    <div class="row g-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fa fa-users fa-2x text-primary flex-shrink-0"></i>
+                                <h1 class="ms-3 mb-0">123+</h1>
+                            </div>
+                            <h5 class="mb-0">Clients Satisfaits</h5>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fa fa-check fa-2x text-primary flex-shrink-0"></i>
+                                <h1 class="ms-3 mb-0">123+</h1>
+                            </div>
+                            <h5 class="mb-0">Projects Réalisés</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-4" src="img/testimonial-1.jpg" alt="">
+                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
+                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            </p>
+                            <div class="bg-primary mb-3" style="width: 60px; height: 5px"></div>
+                            <h5>Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-4" src="img/testimonial-2.jpg" alt="">
+                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
+                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            </p>
+                            <div class="bg-primary mb-3" style="width: 60px; height: 5px"></div>
+                            <h5>Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h1 class="text-white mb-4"><img class="img-fluid me-3" src="" alt="">Handy</h1>
+                    <span>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
+                        stet lorem sit clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum
+                        et lorem et sit.</span>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+                    <p>Clita erat ipsum et lorem et sit, sed stet lorem sit clita.</p>
+                    <div class="position-relative">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email">
+                        <button type="button"
+                            class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">S'inscrire</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Contact</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Adidogomé (LOME –TOGO)</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>Tel : +228 90 73 11 11</p>
+                    <p><i class="fa fa-envelope me-3"></i>contact@handy.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Mentions légales</h5>
+                    <a class="btn btn-link" href="droits-dauteur.html">Droits D'auteur</a>
+                    <a class="btn btn-link" href="termes-et-conditions.html">Conditions D'utilisation</a>
+                    <a class="btn btn-link" href="politique-de-confidentialite.html">Politique De Confidentialité</a>
+                    <a class="btn btn-link" href="limitation-de-responsabilite.html">Limitation De Responsabilité</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Liens Utiles</h5>
+                    <a class="btn btn-link" href="a-propos.html">A Propos</a>
+                    <a class="btn btn-link" href="contact.html">Contact</a>
+                    <a class="btn btn-link" href="prestations.html">Nos prestations</a>
+                    <a class="btn btn-link" href="nous-rejoindre.html">Intéger notre réseau</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Suivez-nous</h5>
+                    <div class="d-flex">
+                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">Handy</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a href="https://it-innovat.com/fr/"> It-innovation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
