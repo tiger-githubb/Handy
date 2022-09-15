@@ -14,7 +14,9 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -33,11 +35,11 @@
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
-
 
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block">
@@ -53,13 +55,22 @@
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-lg-inline-flex align-items-center d-none">
+                    <a class="btn btn-square rounded-circle bg-dark text-primary me-2" href=""><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square rounded-circle bg-dark text-primary me-2" href=""><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square rounded-circle bg-dark text-primary me-2" href=""><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-square rounded-circle bg-dark text-primary me-2" href=""><i
+                            class="fab fa-instagram"></i></a>
+                </div>
                 <ol class="breadcrumb justify-content-end mb-0">
                 </ol>
             </div>
         </div>
     </div>
     <!-- Topbar End -->
-
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
@@ -84,11 +95,11 @@
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <div class="h-100 d-lg-inline-flex align-items-center d-none">
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+            <div class="h-100 d-lg-inline-flex  align-items-center d-none">
+                <a href="connexion.html" class="btn btn-outline-primary px-3 mr-5  d-lg-flex {{login_page}}"
+                    style="border: 1px solid ;" id="login-btn">Connexion </a>
+                <a href="nous-rejoindre.html" class="btn btn-primary px-3 d-lg-flex {{signup_page}}"
+                    style="margin-left: 20px;" :hover=" ">Inscription</a>
             </div>
         </div>
     </nav>
@@ -108,6 +119,243 @@
         </div>
     </div>
     <!-- Page Header End -->
+
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="wide-tb-70">
+                <div class="container">
+                    <div c lass="row">
+                        <div class="col-md-12 col-lg-12">
+                            <h2>Pour que le professionnel puisse intervenir :</h2>
+                            <p>
+                                Les champs comportant un <strong style="color:red;">(*)</strong> sont obligatoires.
+                            </p>
+                            <br>
+                            <div class="single-content-gap">
+                                <!-- Request Form Start -->
+                                <form id="myForm" class="rounded-field ">
+                                    <h5 class="add-listing__form-title" style="color:#FF5C23;">
+                                        Où l'artisan doit-il intervenir ?
+                                    </h5>
+                                    <hr class="mb-4" style="background-color:#FF5C23;font-weight:700;">
+                                    <br>
+                                    <div class="form-row mb-4">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Adresse *"
+                                                name="adresse_intervention" id="autocomplete" onFocus="geolocate()"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="add-listing__form-title" style="color:#FF5C23;">
+                                        À quelles date et heure doit-il intervenir ?
+                                    </h5>
+                                    <hr class="mb-4" style="background-color:#FF5C23;font-weight:700;">
+                                    <br>
+                                    <div class="form-row mb-4">
+                                        <div class="col mb-3">
+                                            <input type="date" class="form-control" name="date_intervention"
+                                                id="date_intervention" placeholder="Date *" required>
+                                        </div>
+                                        <div class="col">
+                                            <input type="time" class="form-control" name="heure_intervention"
+                                                id="heure_intervention" placeholder="Heure *" required>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="add-listing__form-title" style="color:#FF5C23;">
+                                        Pour que nous puissions mieux suivre votre intervention :
+                                    </h5>
+                                    <hr class="mb-4" style="background-color:#FF5C23;font-weight:700;">
+                                    <br>
+                                    <div class="form-row mb-4">
+                                        <div class="col mb-3">
+                                            <input type="text" class="form-control" name="nom_prenoms" id="nom_prenoms"
+                                                placeholder="Nom & Prénoms *" required>
+                                        </div>
+                                        <div class="col ">
+                                            <input type="text" class="form-control" name="contact_telephonique"
+                                                id="contact_telephonique" placeholder="Contact téléphonique *"
+                                                maxlength="10"
+                                                onKeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;if(event.which < 45 || event.which > 57) return false;"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="form-row mb-4">
+                                        <div class="col mb-3">
+                                            <input type="email" class="form-control" name="email" id="email"
+                                                placeholder="Email *" required>
+                                        </div>
+                                        <div class="col">
+                                            <textarea type="text" class="form-control" name="details_intervention"
+                                                id="details_intervention"
+                                                placeholder="Détails supplémentaires"></textarea>
+                                        </div>
+                                    </div>
+                                    <br>
+
+
+                                    <h5 class="add-listing__form-title" style="color:#FF5C23;">
+                                        Concernant le règlement :
+                                    </h5>
+                                    <hr class="mb-4" style="background-color:#FF5C23;font-weight:700;">
+                                    <br>
+
+                                    <!-- <fieldset>
+                                        <h3 class="mb-3 h3-sm">Choisissez votre mode de paiement <span class="text-danger">*</span></h3>
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="radio" name="user_choice" class="user_choice" id="cash" value="CASH"> &nbsp;Paiement à la livraison
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    
+                                                    <label>
+                                                        <input type="radio" name="user_choice" class="user_choice" id="mobile_money" value="MOBILE MONEY"> &nbsp;Mobile money
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset> -->
+
+                                    <label>Choisissez votre mode de paiement</label>
+                                    <div class="form-row mb-4">
+                                        <div class="col">
+                                            <select id="paiement" name="paiement" class="form-control" required>
+                                                <option selected>Sélectionner le mode de paiement (*)</option>
+                                                <option value="MOBILE MONEY">MOBILE MONEY</option>
+                                                <option value="CASH">CASH</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="form-row mb-4" id="bloc_mtn_money" style="display:none">
+                                        <div class="col">
+                                            <input type="text" class="form-control" name="mtn_number" id="mtn_number"
+                                                placeholder="Entrez le numéro mobile money" maxlength="11"
+                                                onKeypress="if(event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;if(event.which < 45 || event.which > 57) return false;">
+                                        </div>
+                                    </div>
+                                    <div id="test-nl-4">
+                                        <br>
+                                        <div class="row">
+                                            <!-- Photo 1 -->
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="file-upload">
+                                                    <div class="image-upload-wrap">
+                                                        <input class="file-upload-input" type='file'
+                                                            onchange="readURL(this);" accept="image/*">
+                                                        <div class="drag-text">
+                                                            <h3>
+                                                                Importer une image
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="file-upload-content">
+                                                        <img class="file-upload-image" src="#" alt="your image">
+                                                        <div class="image-title-wrap">
+                                                            <button type="button" onclick="removeUpload()"
+                                                                class="form-btn mx-auto btn-theme bg-pink large"
+                                                                style="border-radius: 25rem">
+                                                                Supprimer
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Photo 2 -->
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="file-upload1">
+                                                    <div class="image-upload-wrap1">
+                                                        <input class="file-upload-input1" type='file'
+                                                            onchange="readURL1(this);" accept="image/*">
+                                                        <div class="drag-text">
+                                                            <h3>
+                                                                Importer une image
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="file-upload-content1">
+                                                        <img class="file-upload-image1" src="#" alt="your image">
+                                                        <div class="image-title-wrap1">
+                                                            <button type="button" onclick="removeUpload1()"
+                                                                class="form-btn mx-auto btn-theme bg-pink large"
+                                                                style="border-radius: 25rem">
+                                                                Supprimer
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="checkbox">
+                                        <label style="font-size:19px;">
+                                            <input type="checkbox" id="indeterminate-checkbox"
+                                                name="indeterminate-checkbox" class="cgu" required> &nbsp;J'accepte les
+                                            <a href="cgu" target="_blank" style="color:#FF5C23;">conditions génerales
+                                                d'utilisation</a>
+                                        </label>
+                                    </div>
+                                    <div class="form-row text-center">
+
+                                        <button class="btn btn-primary px-5">
+                                            Valider
+                                        </button>
+                                    </div>
+                                </form>
+                                <!-- Request Form End -->
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-12 col-lg-3 sidebar-right">
+                            <aside class="sidebar-spacer row">
+                                <div class="sidebar-primary col-lg-12 col-md-6">
+                                    <div class="widget-wrap text-center">
+                                        <div class="emergency-service">
+                                            <h3 class="h3-md fw-5 txt-orange mb-4 fw-6">Service d'urgence</h3>
+                                            <p>Vous avez une urgence ? N'hesitez pas à nous contacter</p>
+                                            <a href="#" class="btn-theme bg-pink oval mt-3">Appelez maintenant</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <section class="sidebar-overflow">
+
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalPaiement" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Paiement mobile money</h5>
+                    <!-- <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body"
+                    style="text-align: center; display: flex; align-items: center; justify-content: center;">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="mx-auto btn-theme bg-pink large" data-dismiss="modal">Annuler</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">

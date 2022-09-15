@@ -29,6 +29,8 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -53,6 +55,12 @@
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-lg-inline-flex align-items-center d-none">
+                    <a class="btn btn-square rounded-circle bg-dark text-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square rounded-circle bg-dark text-primary me-2" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square rounded-circle bg-dark text-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-square rounded-circle bg-dark text-primary me-2" href=""><i class="fab fa-instagram"></i></a>
+                </div>
                 <ol class="breadcrumb justify-content-end mb-0">
                 </ol>
             </div>
@@ -84,11 +92,9 @@
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <div class="h-100 d-lg-inline-flex align-items-center d-none">
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+            <div class="h-100 d-lg-inline-flex  align-items-center d-none">
+                <a href="connexion.html" class="btn btn-outline-primary px-3 mr-5  d-lg-flex {{login_page}}" style="border: 1px solid ;"  id="login-btn" >Connexion </a>
+                <a href="nous-rejoindre.html" class="btn btn-primary px-3 d-lg-flex {{signup_page}}" style="margin-left: 20px;" :hover=" ">Inscription</a>
             </div>
         </div>
     </nav>
@@ -109,6 +115,48 @@
     </div>
     <!-- Page Header End -->
 
+    <!-- form -->
+
+    <div class="container-xxl py-5">
+        <div class="row">
+            <div class="col-sm-6 px-0 d-none d-sm-block">
+                <img src="img/register.jpg" alt="login image" class="login-img">
+            </div>
+            <div class="col-sm-6 login-section-wrapper">
+                <div class="login-wrapper my-auto">
+                    <h1 class="login-title">Inscription</h1>
+                    <form action="#!">
+                        <div class="form-group mb-4">
+                            <label for="number"> Téléphone (*) </label>
+                            <input type="number"name="telephone" id="email" class="form-control"
+                            placeholder="Ex: 07 07 07 07 07">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="password">Mot de passe</label>
+                            <input type="password" name="password" id="password" class="form-control"
+                                placeholder="tapez votre mot de passe">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="password">Confirmation de mot de passe </label>
+                            <input type="password" name="password" id="password" class="form-control"
+                                placeholder="tapez votre mot de passe">
+                        </div>
+                        <a href="" class="btn btn-primary py-3 px-5 me-3 animated fadeIn">Inscription</a>
+                    </form>
+    
+                    <!-- <a href="#!" class="forgot-password-link mt-4">mot de passe oublié?</a> -->
+                    <p class="login-wrapper-footer-text mt-4">Vous avez un compte?</p>
+                    <p>
+                        <a href="connexion.html" class="text-reset green-link">Connectez-vous ici</a>
+                    </p>
+    
+    
+                </div>
+            </div>
+    
+        </div>
+    </div>
+  <!-- form -->
     <!-- Footer Start -->
     <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
